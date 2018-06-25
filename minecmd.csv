@@ -1,10 +1,17 @@
 # hey comment
-FTC,NeoScrypt,   ./ccminer/ccminer -a neoscrypt -o stratum+tcp://hub.miningpoolhub.com:20510                   -u khavernathy77.homebox -p x                    --max-temp=75
-VTC,Lyra2REv2,   ./ccminer/ccminer -a lyra2v2   -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20507    -u khavernathy77.homebox -p x                    --max-temp=75
-MONA,Lyra2REv2,  ./ccminer/ccminer -a lyra2v2   -o stratum+tcp://hub.miningpoolhub.com:20593    -u khavernathy77.homebox -p x                    --max-temp=75
-XMR,Cryptonight,  ./ccminer/ccminer -a cryptonight   -o stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20580    -u fisinginthecoy.carnivalhome -p x                    --max-temp=75
-BTG,Equihash,./zcash/miner  --intensity 64 --templimit 75 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20595  --user khavernathy77.homebox -pass x 
-ZEN,Equihash,./zcash/miner  --intensity 64 --templimit 75 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20594  --user khavernathy77.homebox -pass x 
-ZEC,Equihash,./zcash/miner  --intensity 64 --templimit 75 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20570  --user khavernathy77.homebox -pass x 
-ZCL,Equihash,./zcash/miner  --intensity 64 --templimit 75 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20575  --user khavernathy77.homebox -pass x 
-GBX,NeoScrypt,./ccminer/ccminer -a neoscrypt -o stratum+tcp://eu1.altminer.net:4233  -u GKBUbCwAgDRXfByniohzm5d8bb5kSaufY1.1080 -p c=GBX 
+#FTC,NeoScrypt,   ./ccminer/ccminer -a neoscrypt -o stratum+tcp://hub.miningpoolhub.com:20510                   -u douglasmfranz.spacebox -p x                    --max-temp=79
+
+#VTC,Lyra2REv2,   ./ccminer/ccminer -a lyra2v2   -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20507    -u douglasmfranz.spacebox -p x   --max-temp=79
+
+#MONA,Lyra2REv2,  ./ccminer/ccminer -a lyra2v2   -o stratum+tcp://hub.miningpoolhub.com:20593    -u douglasmfranz.spacebox -p x --max-temp=79
+
+# BTG,Equihash,./zcash/miner  --intensity 64 --templimit 79 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20595  --user douglasmfranz.spacebox -pass x 
+
+ZEN,Equihash,./zcash/miner  --intensity 64 --templimit 79 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20594  --user douglasmfranz.spacebox -pass x 
+
+ZEC,Equihash,./zcash/miner  --intensity 64 --templimit 79 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20570  --user douglasmfranz.spacebox -pass x 
+
+# zcl can't connect rn
+#ZCL,Equihash,./zcash/miner  --intensity 64 --templimit 79 --tempunits c --server us-east.equihash-hub.miningpoolhub.com --port 20575  --user douglasmfranz.spacebox -pass x 
+
+# GBX,NeoScrypt,./ccminer/ccminer -a neoscrypt -o stratum+tcp://eu1.altminer.net:4233  -u GKBUbCwAgDRXfByniohzm5d8bb5kSaufY1.1080 -p c=GBX 

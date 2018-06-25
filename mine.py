@@ -11,6 +11,7 @@ import re
 import csv
 from enum import Enum
 import sys, traceback
+import time
 
 import subprocess, shlex
 from threading import Timer
@@ -266,15 +267,19 @@ def main():
     logfile = open('automine.log', 'ab')
     PrintAndLog(logfile, fmtTime() + ": starting autominer w/ " + str(timeout) + "s looptime.")
     while True:
-        startMiner(logfile, timeout)
+        try:
+            startMiner(logfile, timeout)
+        except:
+            print "Failed to start. Trying again in 5s."
+            time.sleep(5)
 
 if __name__ == '__main__':
     try:
         main()
     except:
-        print sys.exc_info()[0]
-        print traceback.format_exc()
-
-        print "Press Enter to continue ..."
-        raw_input()
+        #print sys.exc_info()[0]
+        #print traceback.format_exc()
+        time.sleep(5)
+        #print "Press Enter to continue ..."
+        #raw_input()
 
